@@ -41,6 +41,7 @@ def load_stream(input_stream):
 
 
 def run(input_stream, options, encoding='utf8'):
+    options.dot = options.dot.decode(encoding)
     data = defaultdict(int)
     total = 0
     type_ = float
